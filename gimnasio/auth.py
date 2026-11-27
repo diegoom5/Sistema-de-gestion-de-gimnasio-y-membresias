@@ -6,7 +6,7 @@ class SesionAdmin:
             cls._instancia = super(SesionAdmin, cls).__new__(cls)
             cls._instancia.autenticado = False
             cls._instancia.usuario_actual = None
-            # Credenciales de administradores del gimnasio
+            # Credenciales de administradores del gimnasio.
             cls._instancia._credenciales = {
                 "diegoom5": "Promocion2017", #Gerente
                 "recepcion": "recepcion123", #Personal de administración
@@ -22,4 +22,4 @@ class SesionAdmin:
 
     def cerrar_sesion(self):
         self.autenticado = False
-        self.usuario_actual = None
+        self.usuario_actual = None 
